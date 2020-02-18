@@ -1,0 +1,115 @@
+
+$medium: 600;
+$tiny: "( max-width: 320px )";
+$mobile:  "( max-width: 767px )";
+$desktop: "( min-width: 768px )";
+$panorama: "( min-width: 1440px )";
+
+$pink-1:#D30F4B;
+$pink-2:#FF3162;
+
+$purple-1: #443247;
+$purple-2: #624963;
+
+$blue-1: #10384F;
+$blue-2: #00617F;
+$blue-3: #0091DF;
+$blue-4: #00BCFF;
+$blue-5: #2C3031;
+$blue-6: #173F5B;
+$blue-7: #329AE7;
+
+$green-1: #004422;
+$green-2: #2B6636;
+$green-3: #66B512;
+$green-4: #89D329;
+
+@mixin diamond($bg, $w, $h:auto, $deg:-12deg) {
+  content: "";
+  background-color: $bg;
+  transform: skew($deg) rotate(0deg);
+  width: $w;
+  height: $h;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+
+@mixin diamondY($bg, $w, $h:auto, $deg:-3deg) {
+  content: "";
+  background-color: $bg;
+  transform: skewY($deg) rotate(0deg);
+  width: $w;
+  height: $h;
+  position: absolute;
+}
+
+@mixin diamondLeft($bg, $w, $h, $left, $deg:-12deg) {
+  @include diamond($bg, $w, $h, $deg);
+  top: 0;
+  bottom: 0;
+  left: $left;
+}
+
+@mixin diamondRight($bg, $w, $h, $right, $deg:-12deg) {
+  @include diamond($bg, $w, $h, $deg);
+  top: 0;
+  bottom: 0;
+  right: $right;
+}
+
+@mixin diamondTop($bg, $w, $h, $top, $deg:-3deg) {
+  @include diamondY($bg, $w, $h, $deg);
+  top: $top;
+  left: 0;
+  right: 0;
+}
+
+@mixin diamondBottom($bg,$w, $h, $bottom, $deg:-3deg) {
+  @include diamondY($bg, $w, $h, $deg);
+  left: 0;
+  right: 0;
+  bottom: $bottom;
+}
+
+@mixin imageFill() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@mixin bg($url:null) {
+  height: 100%;
+  background-image: $url;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+@mixin svgImage($color, $url:null) {
+  background-color: $color;
+  -webkit-mask: url($url) no-repeat 50% 50%;
+  mask: url($url) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+@mixin mobile {
+  @media #{$mobile} { @content; }
+}
+
+@mixin desktop {
+  @media #{$desktop} { @content; }
+}
+
+@mixin tiny {
+  @media #{$tiny} { @content; }
+}
+
+@mixin panorama {
+  @media #{$panorama} { @content; }
+}

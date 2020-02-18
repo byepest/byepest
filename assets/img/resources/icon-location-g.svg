@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1024" transform="translate(-73.000000, -3686.000000)">
+            <g id="Group-17" transform="translate(74.000000, 3687.000000)">
+                <circle id="Oval-Copy-3" stroke="#FF3162" cx="15" cy="15" r="15"></circle>
+                <g id="locating" transform="translate(9.000000, 6.000000)" fill="#FF3162" fill-rule="nonzero">
+                    <path d="M6,0 C2.69175557,0 0,2.69099762 0,6 C0,9.18301044 5.45400048,17.4802531 5.68724233,17.8312528 C5.75625022,17.9355054 5.87400806,18 6,18 C6.12599194,18 6.24299183,17.9355054 6.31275767,17.8312528 C6.54524157,17.4802531 12,9.18301044 12,6 C12,2.69099762 9.30824443,0 6,0 Z M6,8.62498708 C4.55248803,8.62498708 3.37501292,7.44747752 3.37501292,6 C3.37501292,4.55252248 4.55252248,3.37501292 6,3.37501292 C7.44747752,3.37501292 8.62498708,4.55252248 8.62498708,6 C8.62498708,7.44747752 7.44747752,8.62498708 6,8.62498708 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
